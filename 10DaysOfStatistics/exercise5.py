@@ -11,7 +11,7 @@ if __name__ == '__main__' :
 
     dt = []
     for i in xrange(N):
-        dt.insert(len(dt), (l[i] - mean)**2 )
+        dt.insert( (l[i] - mean)**2 )
 
     std = m.sqrt(sum(dt) / N )
 
