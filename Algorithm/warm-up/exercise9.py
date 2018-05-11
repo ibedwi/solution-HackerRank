@@ -11,12 +11,14 @@ def birthdayCakeCandles(n, ar):
     for i in range(0,n):
         if ar[i]>tertinggi:
             tertinggi = ar[i]
+            jumlah=1
         elif tertinggi == ar[i]:
             jumlah+=1
     
     return(jumlah)
 
-n = int(raw_input().strip())
-ar = map(int, raw_input().strip().split(' '))
-result = birthdayCakeCandles(n, ar)
-print(result)
+if __name__ == "__main__":
+    n = int(raw_input().strip())
+    ar = map(int, raw_input().strip().split(' '))
+    result = birthdayCakeCandles(n, ar)
+    print(result)
